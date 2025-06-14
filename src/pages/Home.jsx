@@ -1,9 +1,10 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Box, Container, Link, List, ListItem, ListItemText } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Box, Container, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import bi from '../assets/images/apple.webp';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -27,10 +28,10 @@ export default function Home() {
               gap: 2,
             }}
           >
-            <Link href="/" color="inherit" underline="none">Home</Link>
-            <Link href="/about" color="inherit" underline="none">About</Link>
-            <Link href="/review" color="inherit" underline="none">Review</Link>
-            <Link href="/Stulist" color="inherit" underline="none">List of my students</Link>
+            <Link to="/" >Home</Link>
+            <Link to="/about" >About</Link>
+            <Link to="/review" >Review</Link>
+            <Link to="/Stulist" >List of my students</Link>
           </Box>
         </Toolbar>
       </AppBar>
