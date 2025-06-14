@@ -173,6 +173,8 @@ return (
               <Box
                 component="nav"
                 sx={{
+                  flexDirection: { xs: 'column', sm: 'row' }, 
+                  alignItems:'center',
                   display: { xs: menuOpen ? 'block' : 'none', sm: 'flex' },
                   gap: 2,
                 }}

@@ -25,6 +25,8 @@ export default function Home() {
             component="nav"
             sx={{
               display: { xs: menuOpen ? 'block' : 'none', sm: 'flex' },
+              flexDirection: { xs: 'column', sm: 'row' }, 
+              alignItems:'center',
               gap: 2,
             }}
           >
