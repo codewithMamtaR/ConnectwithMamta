@@ -29,10 +29,10 @@ export default function Review() {
               gap: 2,
             }}
           >
-            <Link to="/" >Home</Link>
-            <Link to="/about" >About</Link>
-            <Link to="/review" >Review</Link>
-            <Link to="/Stulist">List of my students</Link>
+            <Link to="/" style={{ marginBottom: '1rem' }}>Home</Link>
+            <Link to="/about" style={{ marginBottom: '1rem' }} >About</Link>
+            <Link to="/review" style={{ marginBottom: '1rem' }}>Review</Link>
+            <Link to="/Stulist" style={{ marginBottom: '1rem' }}>List of my students</Link>
           </Box>
         </Toolbar>
       </AppBar>
