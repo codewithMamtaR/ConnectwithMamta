@@ -24,10 +24,12 @@ export default function Home() {
           <Box
             component="nav"
             sx={{
-              display: { xs: menuOpen ? 'block' : 'none', sm: 'flex' },
+              display: { xs: menuOpen ? 'flex' : 'none', sm: 'flex' },
               flexDirection: { xs: 'column', sm: 'row' }, 
               alignItems:'center',
               gap: 2,
+              px: 2,
+              py: { xs: 2, sm: 0 },
             }}
           >
             <Link to="/"  style={{ marginBottom: '1rem' }}>Home</Link>

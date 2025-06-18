@@ -25,8 +25,10 @@ export default function Review() {
             sx={{
               flexDirection: { xs: 'column', sm: 'row' }, 
               alignItems:'center',
-              display: { xs: menuOpen ? 'block' : 'none', sm: 'flex' },
+              display: { xs: menuOpen ? 'flex' : 'none', sm: 'flex' },
               gap: 2,
+              px: 2,
+              py: { xs: 2, sm: 0 },
             }}
           >
             <Link to="/" style={{ marginBottom: '1rem' }}>Home</Link>
